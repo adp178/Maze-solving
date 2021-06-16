@@ -18,20 +18,20 @@ For any specifed map, applying one of these search algorithms either returns fai
 
 Having coded five path-generating algorithms, we want to analyze and compare their performance. Answered the following questions:
 
-*Find a map size (dim) that is large enough to produce maps that require some work to solve, but small enough that you can run each algorithm multiple times for a range of possible p values. How did you pick a dim?
-*For p = 0.2, generate a solvable map, and show the paths returned for each algorithm. Do the results make sense?
+* Find a map size (dim) that is large enough to produce maps that require some work to solve, but small enough that you can run each algorithm multiple times for a range of possible p values. How did you pick a dim?
+* For p = 0.2, generate a solvable map, and show the paths returned for each algorithm. Do the results make sense?
 Given dim, how does maze-solvability depend on p? For a range of p values, estimate the probability that a maze will be solvable by generating multiple mazes and checking them for solvability. What is the best algorithm to use here? Plot density vs solvability, and try to identify as accurately as you can the threshold p0 where for p < p0, most mazes are solvable, but p > p0, most mazes are not solvable.
-*For p in [0; p0] as above, estimate the average or expected length of the shortest path from start to goal. You may discard unsolvable maps. Plot density vs expected shortest path length. What algorithm is most useful here?
-*Is one heuristic uniformly better than the other for running A_star? How can they be compared? Plot the relevant data and justify your conclusions.
-*Do these algorithms behave as they should?
-*For DFS, can you improve the performance of the algorithm by choosing what order to load the neighboring rooms into the fringe? What neighbors are `worth' looking at before others? Be thorough and justify yourself.
-*On the same map, are there ever nodes that BD-DFS expands that A_star doesn't? Why or why not? Give an example, and justify.
-How does the threshold probability p0 depend on dim?
+* For p in [0; p0] as above, estimate the average or expected length of the shortest path from start to goal. You may discard unsolvable maps. Plot density vs expected shortest path length. What algorithm is most useful here?
+* Is one heuristic uniformly better than the other for running A_star? How can they be compared? Plot the relevant data and justify your conclusions.
+* Do these algorithms behave as they should?
+* For DFS, can you improve the performance of the algorithm by choosing what order to load the neighboring rooms into the fringe? What neighbors are `worth' looking at before others? Be thorough and justify yourself.
+* On the same map, are there ever nodes that BD-DFS expands that A_star doesn't? Why or why not? Give an example, and justify.
+* How does the threshold probability p0 depend on dim?
 
 # Part - 3: Generating Hard Mazes
 In this part, we have generated hard to solve mazes. Three possible ways you might quantify hard are: a) how long the shortest path is, b) the total number of nodes expanded during solving, and c) the maximum size of the fringe at any point in solving.
 
 We designed and implemented local search algorithms of
 
-Genetic Algorithm
-Hill Climbing to discover hard to solve mazes
+* Genetic Algorithm
+* Hill Climbing to discover hard to solve mazes
